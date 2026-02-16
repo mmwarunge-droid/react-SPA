@@ -1,0 +1,127 @@
+.block-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 3rem 5%;
+  background: #f8f9fb;
+}
+.header {
+  padding: 2rem 5%;
+  background: linear-gradient(135 deg, #0f172a, #1e293b );
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.article-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.article-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+.article-image-container {
+  height: 200px;
+  overflow: hidden;
+}
+.article-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.article-card:hover .article-image {
+  transform: scale(1.05);
+}
+
+.article-content {
+  padding: 1rem 1.2rem 1.5rem;
+}
+
+.article-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
+.article-meta {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 0.8rem;
+}
+.article-author {
+  font-weight: 600;
+}
+
+.meta-separator {
+  margin: 0 6px;
+}
+.article-description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  transition: all 0.3s ease;
+}
+.article-description.expanded {
+  -webkit-line-clamp: unset;
+  display: block;
+}
+ .about-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  color: #222;
+}
+ .about-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.about-container p {
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 2rem;
+}
+.about-image-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+.about-image {
+  width: 100px;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.read-more {
+  margin-top: 0.8rem;
+  background: none;
+  font-weight: 600;
+  text-decoration: none;
+  color: #111;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.read-more:hover {
+  color: #7300ff;
+  border-color: #6c6c6b;
+  text-decoration: underline;
+}
+.footer{
+   background: #111;
+  color: #fff;
+  padding: 2rem 5%;
+  margin-top: 3rem;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
